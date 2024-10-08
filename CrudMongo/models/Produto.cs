@@ -15,6 +15,8 @@ namespace CrudMongo.models
         public string? id {get;set;}
         [BsonElement("Nome")]
         public string? nome {get;set;} = null;
+        [BsonElement("Valor")]
+        public string? valor {get;set;} = null;
        
 
     }
