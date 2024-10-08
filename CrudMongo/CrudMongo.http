@@ -1,0 +1,6 @@
+@CrudMongo_HostAddress = http://localhost:5032
+
+GET {{CrudMongo_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
