@@ -5,10 +5,10 @@ using System.Threading.Tasks;
 
 namespace CrudMongo.models
 {
-    public class ProdutoDatabaseSettings
+    public class HospitalDatabaseSettings
     {
         public string ConnectionString { get; set; } = null;
         public string DatabaseName { get; set; } = null;
-        public string ProdutoCollectionName { get; set; } = null;
+        public string HospitalCollectionName { get; set; } = null;
     }
 }

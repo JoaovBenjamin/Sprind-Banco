@@ -6,10 +6,13 @@ using CrudMongo.Services;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.Configure<ProdutoDatabaseSettings>
-    (builder.Configuration.GetSection("DevNetStoreDatabase"));
+builder.Services.Configure<HospitalDatabaseSettings>
+    (builder.Configuration.GetSection("DevNetStoreDatabaseHospital"));
+builder.Services.Configure<PacienteDatabaseSettings>
+    (builder.Configuration.GetSection("DevNetStoreDatabasePaciente"));
 
-builder.Services.AddSingleton<ProdutoService>();
+builder.Services.AddSingleton<HospitalService>();
+builder.Services.AddSingleton<PacienteService>();
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
