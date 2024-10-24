@@ -19,7 +19,7 @@ namespace CrudMongo.controller
             => await _hospitalService.GetAsync();
 
          [HttpGet("{id:length(24)}")]
-    public async Task<ActionResult<Hospital>> Get(string id)
+    public async Task<ActionResult<Hospital>> Get([FromRoute]string id)
     {
         var Hospital = await _hospitalService.GetAsync(id);
 
@@ -32,7 +32,7 @@ namespace CrudMongo.controller
     }
 
     [HttpPost]
-    public async Task<IActionResult> Post(Hospital Hospital)
+    public async Task<IActionResult> Post([FromBody]Hospital Hospital)
     {
         await _hospitalService.CreateAsync(Hospital);
 
@@ -40,7 +40,7 @@ namespace CrudMongo.controller
     }
 
     [HttpPut("{id:length(24)}")]
-    public async Task<IActionResult> Update(string id, Hospital Hospital)
+    public async Task<IActionResult> Update([FromRoute]string id, [FromBody]Hospital Hospital)
     {
         var _Hospital = await _hospitalService.GetAsync(id);
 
@@ -57,7 +57,7 @@ namespace CrudMongo.controller
     }
 
       [HttpDelete("{id:length(24)}")]
-    public async Task<IActionResult> Delete(string id)
+    public async Task<IActionResult> Delete([FromRoute]string id)
     {
         var Hospital = await _hospitalService.GetAsync(id);
 
