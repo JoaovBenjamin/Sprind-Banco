@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CrudMongo")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+81270f5f10eff07203045ba9260ac5c53faac62b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e494f6dd7b04257592bcbc9074f0fafcde77242d")]
 [assembly: System.Reflection.AssemblyProductAttribute("CrudMongo")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CrudMongo")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
